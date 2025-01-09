@@ -1,0 +1,59 @@
+:root {
+    --cor-backgorund-dark: #272822;
+    --cor-backgorund-light: #FFFFFF;
+    --cor-text-dark: #FFFFFF;
+    --cor-text-light: black;
+    --cor-hover-light: #c2c2c2;
+    --cor-hover-dark: #525252
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.light {
+    background-color: var(--cor-backgorund-light);
+    color: var(--cor-text-light);
+}
+
+.dark {
+    background-color: var(--cor-backgorund-dark);
+    color: var(--cor-text-dark);
+}
+
+.butao {
+    padding: 1rem;
+    width: 15rem;
+    border-radius: 2rem;
+    font-family: 'arial', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.butao.light {
+    background-color: #e0e0e0;
+}
+
+.butao.dark{
+    background-color: #444444;
+}
+
+.butao.light:hover {
+    background-color: var(--cor-hover-light);
+    border-color: var(--cor-hover-light);
+    cursor: pointer;
+}
+
+.butao.dark:hover {
+    background-color: var(--cor-hover-dark);
+    border-color: var(--cor-hover-dark);
+    cursor: pointer;
+}
